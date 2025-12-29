@@ -1,12 +1,15 @@
-import java.util.*;
+
+// QUESTION LINK:- https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 // BRUTE FORCE : TIME COMPLEXITY:-O(N^2) AND SPACE COMPLEXITY:- O(N) BECAUSE USING HASHSET
+import java.util.*;
+
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int n = s.length();
         int maxLen = 0;
 
-        // starting index
+        // starting index & using HashSet for storing unique characters
         for (int i = 0; i < n; i++) {
             HashSet<Character> set = new HashSet<>();
 
